@@ -8,8 +8,12 @@ describe('reduce function', () => {
   });
 
   it('should use initial value if provided', () => {
-    const diff = reduce([1, 2, 3, 4], (accumulator, item) => accumulator - item, 10);
+    const diff = reduce(
+      [1, 2, 3, 4],
+      (accumulator, item) => accumulator - item,
+      10
+    );
 
     expect(diff).toEqual(0);
-  })
+  });
 });
