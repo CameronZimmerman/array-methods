@@ -5,5 +5,11 @@ describe('reduce function', () => {
     const sum = reduce([1, 2, 3, 4], (accumulator, item) => accumulator + item);
 
     expect(sum).toEqual(10);
+  });
+
+  it('should use initial value if provided', () => {
+    const diff = reduce([1, 2, 3, 4], (accumulator, item) => accumulator - item, 10);
+
+    expect(diff).toEqual(0);
   })
-})
+});
