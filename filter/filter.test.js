@@ -5,6 +5,6 @@ describe('filter function', () => {
     const names = ['john', 'james', 'michael'];
     const filteredNames = filter(names, name => name.startsWith('j'));
 
-    expect(filteredNames).toEqual('john', 'james');
+    expect(filteredNames).toEqual(['john', 'james']);
   });
 });
