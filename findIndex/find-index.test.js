@@ -6,4 +6,9 @@ describe('findIndex function', () => {
 
     expect(index).toEqual(2);
   });
+  it('when given an array with no matching values should return negative one', () => {
+    const index = findIndex(['do', 're', 'me', 'fa', 'so', 'la', 'ti'], item => item.length > 2)
+
+    expect(index).toEqual(-1);
+  })
 });
